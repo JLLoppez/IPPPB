@@ -1,44 +1,45 @@
-# IPPPB Next.js - Termux Friendly
+# IPPPB Website
 
-This version was adapted to run on **Termux / Android**.
+Official website project for Instituto Politécnico Privado Padre Builu (IPPPB).
 
-## What changed
-- Prisma was removed.
-- Data is stored in `data/db.json`.
-- The admin dashboard, portal login, gallery, courses, announcements, messages, and applications still work.
-- Seed data is loaded with `npm run seed`.
+This platform provides information about the institution, its courses, announcements, and allows prospective students to submit applications online. It also includes an administrative interface for managing content such as courses, announcements, gallery items, and site information.
 
-## Run on Termux
+## Features
 
-```bash
-pkg update && pkg install nodejs
-cd ~/projects/ipppb-next-admin-portal-gallery
+- Public website for the institute
+- Courses and announcements pages
+- Student application form
+- Gallery and institutional information pages
+- Admin interface for managing content
+- Responsive user interface
+- Multilingual support
+
+## Technologies
+
+- Next.js
+- React
+- Node.js
+- CSS / Bootstrap
+
+## Running the project locally
+
+Install dependencies:
+
 npm install
+
+Copy environment file:
+
 cp .env.example .env.local
-cp .env.example .env
-npm run seed
-npm run dev -- --hostname 0.0.0.0 --port 3000
-```
 
-Then open:
-- `http://127.0.0.1:3000`
-- or `http://localhost:3000`
+Start the development server:
 
-## Admin login
-Set these in `.env` and `.env.local`:
+npm run dev
 
-```env
-ADMIN_PASSWORD="your-admin-password"
-SESSION_PASSWORD="a-very-long-secret-at-least-32-characters"
-PORTAL_ADMIN_EMAIL="admin@example.com"
-PORTAL_ADMIN_PASSWORD="admin123456"
-```
+Open the application:
 
-## Storage
-All editable content is saved in:
+http://localhost:3000
 
-```text
-data/db.json
-```
+## Production build
 
-Uploads remain inside `public/uploads/...`.
+npm run build
+npm run start
