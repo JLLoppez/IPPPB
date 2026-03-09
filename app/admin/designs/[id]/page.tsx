@@ -4,8 +4,9 @@ import { updateDesign } from "../../server-actions";
 import { UploadField } from "@/app/components/UploadField";
 import { notFound } from "next/navigation";
 
-export default async function EditDesignPage({ params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export default async function EditDesignPage({
+  const { id } = await params; params }: { params: { id: string } }) {
+  const id = Number(id);
   if (!Number.isFinite(id)) notFound();
 
   const design = await prisma.design.findUnique({ where: { id } });

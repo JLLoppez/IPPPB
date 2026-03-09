@@ -2,6 +2,7 @@ import Navbar from '@/app/components/ipppb/Navbar';
 import Footer from '@/app/components/ipppb/Footer';
 import { prisma } from '@/lib/prisma';
 import { getDict } from '@/lib/i18n';
+import Image from "next/image";
 
 export default async function SobrePage() {
   const [s, { t }] = await Promise.all([
@@ -38,7 +39,7 @@ export default async function SobrePage() {
             </p>
           </div>
           <div className="logo-panel">
-            <img src="/ipppb/pic.png" alt="IPPPB" />
+            <Image src="/ipppb/pic.png" alt="IPPPB" width={500} height={500} />
           </div>
         </section>
       </main>
