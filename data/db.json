@@ -1,0 +1,109 @@
+{
+  "profile": [],
+  "project": [],
+  "design": [],
+  "resume": [],
+  "siteSetting": [
+    {
+      "id": 1,
+      "siteName": "Instituto Politécnico Privado Padre Builu",
+      "logoUrl": "/ipppb/pic.png",
+      "heroTitle": "IPPPB — FÉ E CIÊNCIA",
+      "heroSubtitle": "Invista nos seus filhos ou em si. Formamos estudantes com base técnica, disciplina e valores humanos.",
+      "aboutTitle": "Conheça mais Sobre Nós",
+      "aboutText": "O Instituto Politécnico Privado Padre Builu é uma instituição focada no ensino e aprendizagem, voltada para a formação técnica e humana.",
+      "address": "Angola",
+      "phone": "+244 000 000 000",
+      "email": "geral@ipppb.ao",
+      "footerText": "Copyright © Instituto Politécnico Privado Padre Builu",
+      "whatsappNumber": "244000000000",
+      "googleMapsEmbedUrl": null,
+      "createdAt": "2026-03-09T10:26:53.798Z",
+      "updatedAt": "2026-03-09T10:26:53.798Z"
+    }
+  ],
+  "course": [
+    {
+      "title": "Informática",
+      "description": "Fundamentos de informática, redes, programação e prática laboratorial.",
+      "duration": "3 anos",
+      "level": "Ensino técnico",
+      "isActive": true,
+      "id": 1,
+      "createdAt": "2026-03-09T10:26:53.802Z",
+      "updatedAt": "2026-03-09T10:26:53.802Z"
+    },
+    {
+      "title": "Contabilidade e Gestão",
+      "description": "Contabilidade, gestão administrativa e preparação para o mercado profissional.",
+      "duration": "3 anos",
+      "level": "Ensino técnico",
+      "isActive": true,
+      "id": 2,
+      "createdAt": "2026-03-09T10:26:53.804Z",
+      "updatedAt": "2026-03-09T10:26:53.804Z"
+    },
+    {
+      "title": "Eletricidade",
+      "description": "Instalações elétricas, segurança, manutenção e prática técnica.",
+      "duration": "3 anos",
+      "level": "Ensino técnico",
+      "isActive": true,
+      "id": 3,
+      "createdAt": "2026-03-09T10:26:53.805Z",
+      "updatedAt": "2026-03-09T10:26:53.805Z"
+    },
+    {
+      "title": "Enfermagem",
+      "description": "Base técnica de saúde, cuidados primários e ética profissional.",
+      "duration": "3 anos",
+      "level": "Ensino técnico",
+      "isActive": true,
+      "id": 4,
+      "createdAt": "2026-03-09T10:26:53.806Z",
+      "updatedAt": "2026-03-09T10:26:53.806Z"
+    }
+  ],
+  "announcement": [
+    {
+      "title": "Matrículas abertas",
+      "excerpt": "Garanta já a sua vaga para o novo período letivo.",
+      "content": "As matrículas estão abertas. Utilize o formulário de inscrição no site ou dirija-se à secretaria para concluir o processo.",
+      "published": true,
+      "slug": "matr-culas-abertas",
+      "publishedAt": "2026-03-09T10:26:53.808Z",
+      "id": 1,
+      "createdAt": "2026-03-09T10:26:53.808Z",
+      "updatedAt": "2026-03-09T10:26:53.808Z"
+    },
+    {
+      "title": "Portal do estudante disponível",
+      "excerpt": "Acompanhe inscrições e mensagens diretamente pela plataforma.",
+      "content": "O portal do estudante já está disponível para acesso. Entre com as suas credenciais para acompanhar o estado da sua inscrição.",
+      "published": true,
+      "slug": "portal-do-estudante-dispon-vel",
+      "publishedAt": "2026-03-09T10:26:53.809Z",
+      "id": 2,
+      "createdAt": "2026-03-09T10:26:53.810Z",
+      "updatedAt": "2026-03-09T10:26:53.810Z"
+    }
+  ],
+  "contactMessage": [],
+  "application": [],
+  "user": [],
+  "galleryItem": [
+    {
+      "title": "Instituto Padre Builu",
+      "type": "IMAGE",
+      "url": "/ipppb/pic.png",
+      "coverUrl": "/ipppb/pic.png",
+      "sortOrder": 1,
+      "id": 1,
+      "createdAt": "2026-03-09T10:26:53.811Z",
+      "updatedAt": "2026-03-09T10:26:53.811Z"
+    }
+  ],
+  "_meta": {
+    "initializedAt": "2026-03-09T00:00:00.000Z"
+  }
+}

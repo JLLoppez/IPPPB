@@ -1,0 +1,66 @@
+.footer {
+  background-color: #f3f2f2;
+  color: $white-color;
+  padding: 4.8rem 0;
+
+  @include respond(phone) {
+    border: 0px;
+  }
+
+  &__text {
+    color: darken($white-color, 85%);
+    font-size: 1.3rem;
+
+    a {
+      color: darken($white-color, 85%);
+      font-size: 1.3rem;
+      transition: all 0.4s;
+      display: inline-block;
+      background-color: #d2d2d2;
+      &:hover,
+      &:active {
+        -webkit-box-shadow: 0 1.5rem 4rem rgba(5, 6, 8, 0.781);;
+        box-shadow: 0 1.5rem 4rem rgb(0, 0, 0);;
+      }
+    }
+  }
+
+  & hr {
+    margin: 1rem auto;
+    border: 0;
+    width: 50%;
+    border-top: 2px solid rgb(2, 3, 4);
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    margin: $default-font-size $default-font-size;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.back-to-top i {
+  color: rgb(8, 11, 17);
+  margin: 1rem 0 $default-font-size;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

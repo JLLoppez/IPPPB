@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+
+  &.sr .load-hidden {
+    visibility: hidden;
+  }
+}
+
+body {
+  font-family: "Space Mono", monospace; 
+  text-align: center;
+}
+/* Default iframe styling */
+iframe {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.1); 
+  border-radius: 20px;
+}
+
+/* Adjust iframe size for smaller screens */
+@media (max-width: 767px) {
+  iframe {
+    height: 200px; 
+  }
+}
+
+@media (max-width: 575px) {
+  iframe {
+    height: 150px;
+  }
+}
