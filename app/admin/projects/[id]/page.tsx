@@ -4,8 +4,14 @@ import { updateProject } from "../../server-actions";
 import { UploadField } from "@/app/components/UploadField";
 import { notFound } from "next/navigation";
 
-export default async function EditProjectPage({ params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export default async function EditProjectPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id: idParam } = await params;
+  const id = Number(idParam);
+
   if (!Number.isFinite(id)) notFound();
 
   const project = await prisma.project.findUnique({ where: { id } });
@@ -61,7 +67,13 @@ export default async function EditProjectPage({ params }: { params: { id: string
           </label>
         </div>
 
-        <UploadField name="imageUrl" dir="projects" accept="image/*" label="Project image" initialValue={project.imageUrl} />
+        <UploadField
+          name="imageUrl"
+          dir="projects"
+          accept="image/*"
+          label="Project image"
+          initialValue={project.imageUrl}
+        />
 
         <label style={{ display: "flex", gap: 10, alignItems: "center" }}>
           <input type="checkbox" name="featured" defaultChecked={project.featured} />
