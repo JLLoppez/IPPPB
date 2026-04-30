@@ -5,8 +5,7 @@ import { redirect } from "next/navigation";
 import { getIronSession } from "iron-session";
 import { sessionOptions, type AdminSession } from "@/lib/session";
 import { prisma } from "@/lib/prisma";
-import bcrypt from "bcryptjs";
-
+import * as bcrypt from "bcryptjs";
 
 function slugify(input: string) {
   return input
