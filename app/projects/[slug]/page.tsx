@@ -4,8 +4,17 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import Effects from "@/app/components/Effects";
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = await prisma.project.findUnique({ where: { slug: params.slug } });
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const project = await prisma.project.findUnique({
+    where: { slug },
+  });
+
   if (!project) return notFound();
 
   return (
@@ -39,14 +48,32 @@ export default async function ProjectPage({ params }: { params: { slug: string }
           </div>
         ) : null}
 
-        <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
+        <div
+          style={{
+            display: "flex",
+            gap: 12,
+            flexWrap: "wrap",
+            marginBottom: 18,
+          }}
+        >
           {project.liveUrl ? (
-            <a className="cta-btn cta-btn--hero" href={project.liveUrl} rel="noreferrer" target="_blank">
+            <a
+              className="cta-btn cta-btn--hero"
+              href={project.liveUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
               See Live
             </a>
           ) : null}
+
           {project.githubUrl ? (
-            <a className="cta-btn text-color-main" href={project.githubUrl} rel="noreferrer" target="_blank">
+            <a
+              className="cta-btn text-color-main"
+              href={project.githubUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
               Source Code
             </a>
           ) : null}
